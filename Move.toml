@@ -1,0 +1,17 @@
+[package]
+name = "MosaicTokenUtils"
+version = "1.0.0"
+authors = []
+
+[addresses]
+token_utils = "_"
+
+[dev-addresses]
+token_utils = "0xabcd1234"
+
+[dependencies.AptosFramework]
+git = "https://github.com/movementlabsxyz/aptos-core.git"
+rev = "movement"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]
