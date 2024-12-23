@@ -1,0 +1,19 @@
+{
+  "name": "ts-example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "get_token_balances": "ts-node get_token_balances.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aptos-labs/ts-sdk": "^1.28.0"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "ts-node": "latest",
+    "typescript": "latest"
+  }
+}

@@ -22,7 +22,12 @@ module token_utils::token {
     struct TokenBalance has copy, drop {
         coin_type: String,
         fa_address: String,
+        /// The balance of the coin in the account.
+        /// If user has not migrated the coin to FA, this will be the balance of the coin only, 
+        /// not including the FA balance like coin::balance function.
+        /// If user has migrated the coin to FA, coin_balance will be 0.
         coin_balance: u64,
+        /// The balance of the FA in the account.
         fa_balance: u64,
     }
 

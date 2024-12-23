@@ -9,9 +9,8 @@ module token_utils::token_tests {
     use aptos_framework::aptos_coin;
     use aptos_framework::aptos_coin::AptosCoin;
     use aptos_framework::coin::{Self, MintCapability, BurnCapability, Coin};
-    use aptos_framework::fungible_asset::{Self, MintRef, TransferRef, BurnRef, Metadata};
+    use aptos_framework::fungible_asset::{Self, MintRef, TransferRef, BurnRef};
     use aptos_framework::object;
-    use aptos_framework::object::Object;
     use aptos_framework::primary_fungible_store;
     use token_utils::token::Null;
     use token_utils::token;
@@ -81,7 +80,7 @@ module token_utils::token_tests {
             ),
             token::new_token_balance(
                 type_info::type_name<USDC>(),
-                string::utf8(b"0xb4e823ff13c64519f0ffb8aa715cc00d435f3aa92f160c1d29c17044b823748b"),
+                string::utf8(b"0x73fda93f3d53a3d152a9a6aefccaa035433a1f428b577f8a758631d800832f70"),
                 2_000_000,
                 3_000_000,
             ),
@@ -93,7 +92,7 @@ module token_utils::token_tests {
             ),
             token::new_token_balance(
                 string::utf8(b""),
-                string::utf8(b"0x5188da73d0557d55b0ece93cd1e600006beb709dc13af5e3a394096933e1ac48"),
+                string::utf8(b"0x7923c24e854e2c29b623f5a66e1b78f8be722a6c98b3eaaeb32f79f51aac3bd2"),
                 0,
                 7_000_000,
             ),
